@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <style>
+    @font-face {
+      font-family: Parastoo;
+      src: url('{{ assets_dir }}/fonts/Parastoo-Variable.ttf');
+      font-weight: 100 900;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 2483px;
+      height: 3512px;
+      overflow: hidden;
+      background: #fff;
+    }
+    #doc {
+      position: relative;
+      width: 2483px;
+      height: 3512px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .figma-frame {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .amount-mask {
+      position: absolute;
+      left: 1125px;
+      top: 2233px;
+      width: 963px;
+      height: 66px;
+      background: #efeff0;
+    }
+    .amount {
+      position: absolute;
+      left: 1138px;
+      top: 2234px;
+      margin: 0;
+      color: #000;
+      font-family: Parastoo, serif;
+      font-size: 59.525px;
+      font-weight: 600;
+      line-height: 64.937px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <main id="doc">
+    <img class="figma-frame" src="{{ assets_dir }}/frame13-figma.png" alt="">
+    <div class="amount-mask"></div>
+    <p class="amount">{{ amount }}</p>
+  </main>
+</body>
+</html>
