@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <style>
+    @font-face {
+      font-family: Brygada;
+      src: url('{{ assets_dir }}/fonts/Brygada1918-Variable.ttf');
+      font-weight: 400 700;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 1240px;
+      height: 1754px;
+      overflow: hidden;
+      background: #fff;
+    }
+    #doc {
+      position: relative;
+      width: 1240px;
+      height: 1754px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .figma-frame {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .table-amount-mask {
+      position: absolute;
+      left: 536px;
+      top: 803.5px;
+      width: 624px;
+      height: 48px;
+      background: #fff;
+    }
+    .table-amount {
+      position: absolute;
+      left: 549.5px;
+      top: 812.5px;
+      width: 610.5px;
+      margin: 0;
+      color: #000;
+      font-family: Brygada, serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: normal;
+      white-space: nowrap;
+    }
+    .table-amount .words { font-size: 20px; }
+    .return-mask {
+      position: absolute;
+      left: 77px;
+      top: 954px;
+      width: 1086.5px;
+      height: 123px;
+      background: #fff;
+    }
+    .return-text {
+      position: absolute;
+      left: 77.5px;
+      top: 961px;
+      width: 1086px;
+      margin: 0;
+      color: #000;
+      font-family: Brygada, serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <main id="doc">
+    <img class="figma-frame" src="{{ assets_dir }}/moliyaviy-figma.png" alt="">
+    <div class="table-amount-mask"></div>
+    <p class="table-amount">{{ amount_only }} so‘m</p>
+    <div class="return-mask"></div>
+    <p class="return-text">Alohida e’tiboringizni shunga qaratamizki, mazkur tartib rasmiy reglament talabi hisoblanadi. Pul o‘tkazmasi bizning vakolatli moliyaviy agentimiz orqali amalga oshirilishi sababli, {{ amount_only }} so‘m miqdorida to‘langan yig‘im summasi to‘liq qaytarilishi lozim va to‘lov tasdiqlanganidan so‘ng asosiy to‘lov summasi bilan birga siz ko‘rsatgan rekvizitlarga o‘tkaziladi.</p>
+  </main>
+</body>
+</html>
